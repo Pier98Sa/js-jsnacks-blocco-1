@@ -5,6 +5,7 @@ let buttonReset = document.getElementById("Reset");
 //variabile per stampare il risultato
 let risultato = document.getElementById("risultato");
 
+//evento di click per stampare il risultato
 buttonInsert.addEventListener('click',
     function() {
         let somma = 0;
@@ -23,6 +24,7 @@ buttonInsert.addEventListener('click',
     }
 );
 
+// evento di click per cancellare il risultato stampato
 buttonReset.addEventListener('click',
     function() {
         const htmlEsito = document.getElementById('esito');

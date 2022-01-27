@@ -1,12 +1,16 @@
+//variabili
 let cubo;
 let numero;
 
+//variabili per stampare il risultato
 let risultato = document.getElementById('cubi');
 let n = document.getElementById('numero');
 
+//variabili per poter aggiungere gli eventi d'ascolto
 let buttonInsert = document.getElementById("Insert");
 let buttonReset = document.getElementById("Reset");
 
+//evento di click per inserire un numero
 buttonInsert.addEventListener('click',
     function() {
         do{
@@ -24,6 +28,7 @@ buttonInsert.addEventListener('click',
 }
 );
 
+//evento di click per il reset
 buttonReset.addEventListener('click',
     function() {
         const htmlEsito = document.getElementById('esito');
