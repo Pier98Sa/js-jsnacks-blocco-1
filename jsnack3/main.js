@@ -9,15 +9,20 @@ let media = document.getElementById("media");
 //evento di click per stampare il risultato
 buttonScopri.addEventListener('click',
     function() {
+
+        //variabili per la somma e per la media
         let risultatoSomma = 0;
-        for(let i = 1; i <= 10; i++){
+        let risultatoMedia = 0;
+        const limite = 10;
+
+        for(let i = 1; i <= limite; i++){
             risultatoSomma = risultatoSomma + i;
         }
         //stampa della somma
         somma.innerHTML = risultatoSomma;
 
         //calcolo della media
-        risultatoMedia = risultatoSomma / 10;
+        risultatoMedia = risultatoSomma / limite;
         media.innerHTML = risultatoMedia;
 
         //stampa della media
