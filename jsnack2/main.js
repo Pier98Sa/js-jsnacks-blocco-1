@@ -18,7 +18,7 @@ buttonInsert.addEventListener('click',
 
         do{
             numero = parseInt(prompt("Inserisci un numero"))
-        }while(isNaN(numero))
+        }while(isNaN(numero) || numero < 0 )
         n.innerHTML = numero;
         
         for(let i = 1; i <= numero; i++){
@@ -39,4 +39,21 @@ buttonReset.addEventListener('click',
     }
 );
 
+/*
 
+let cubo;
+let numero;
+let risultato;
+
+do{
+    numero = parseInt(prompt("Inserisci un numero"))
+}while(isNaN(numero))
+
+
+for(let i = 1; i <= numero; i++){
+    cubo = i * i;
+    risultato += cubo + " ";
+} 
+ 
+console.log('i cubi dei primi '+ numero + ' numeri sono' + risultato);
+*/
