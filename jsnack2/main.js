@@ -13,6 +13,9 @@ let buttonReset = document.getElementById("Reset");
 //evento di click per inserire un numero
 buttonInsert.addEventListener('click',
     function() {
+        //reset del risultato nel caso in cui non venga premuto il reset prima di un nuovo calcolo
+        risultato.innerHTML = "";
+
         do{
             numero = parseInt(prompt("Inserisci un numero"))
         }while(isNaN(numero))
@@ -21,11 +24,10 @@ buttonInsert.addEventListener('click',
         for(let i = 1; i <= numero; i++){
             cubo = i * i;
             risultato.innerHTML += cubo + " ";
-
-    }
+        } 
     const htmlEsito = document.getElementById('esito');
     htmlEsito.classList.remove('d-none');
-}
+    }
 );
 
 //evento di click per il reset
@@ -36,3 +38,5 @@ buttonReset.addEventListener('click',
         risultato.innerHTML = "";
     }
 );
+
+
